@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: SpingbootStarter
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: hkaur6
+Implementation-Vendor-Id: com.shc.ecom
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://projects.spring.io/spring-boot/SpingbootSta
+ rter/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

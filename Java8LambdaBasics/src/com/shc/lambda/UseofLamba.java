@@ -18,6 +18,11 @@ public class UseofLamba {
 		l.add("D");
 		l.add("E");
 		
+		l.stream().forEach(System.out::println);
+		
+		l.stream().filter(mmm->mmm.contains("C")).forEach(System.out::print);
+		
+		l.stream().filter(j->j.contains("C")).forEach(System.out::print);
 	/*	m.put(1,"Harleen");
 		m.put(2,"Eshleen");
 //		l.forEach(li->System.out.println(l));
@@ -43,16 +48,54 @@ public class UseofLamba {
 			}
 		});
 		*/
+		m.put(1, "ESHLEEEEENN");
+		m.put(2, "HARLEEEENNN");
+		m.forEach((k,v)->
+		{System.out.println(k+" "+v);
+		if("ESHLEEEEENN".contains(v)){
+			System.out.println(k);
+		}
+		});
+		
+		
 		System.out.println("LINKED LIST");
 		List<String> names = new LinkedList<>();
 		names.add("Harleen");
 		names.add("Ankita");
 		names.add("Akanshsa");
 		
+		long cc = names.stream().filter(mmmm->mmmm.contains("Harleen")).count();
+		System.out.println("CC count"+cc);
+		
 		long count  = names.stream().filter(name->name.startsWith("A")).count();
 		System.out.println(count);
 		
 		HashSet<String> set = new HashSet<String>();
+		
+		List<Integer> ll = new ArrayList<Integer>();
+		ll.add(1);
+		ll.add(3);
+		ll.stream().forEach((i)-> {System.out.println(i);});
+		
+		ll.stream().forEach(System.out::print);
+		
+		
+		HashMap<Integer,String> map = new HashMap<Integer,String>();
+		map.put(1, "Roshni");
+		map.put(2, "CHandni");
+		map.forEach((k,v)->
+		{System.out.println(k+" "+v);
+		if("Roshni".contains(v)){
+			System.out.println(k);
+		}
+		});
+		
+		ArrayList<String> aa = new ArrayList<String>();
+		aa.add("Heelo");
+		aa.add("Hii");
+		aa.stream().forEach((i)->{System.out.println(i);});
+		
+		aa.stream().filter(hh->hh.startsWith("H")).forEach(System.out::println);
 	}
 
 }
